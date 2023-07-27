@@ -24,6 +24,12 @@ exports.handler = async function (event) {
 
 		const data = await response.json();
 
+		if (!response.ok) {
+			console.log(
+				"Limits with server hosting limit timeout to 10 seconds. Please use a shorter prompt. Check my Github for a version with no timeout using CORS and Express!"
+			);
+		}
+
 		return {
 			statusCode: 200,
 			body: JSON.stringify(data),
