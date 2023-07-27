@@ -1,12 +1,2 @@
 [build]
   functions = "netlify/functions"
-
-[functions]
-external_node_modules = [
-  "module-one",
-  "module-two"
-]
-
-[[functions]]
-name = "completions"
-timeout = 60
