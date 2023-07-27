@@ -47,7 +47,7 @@ export default function App() {
 		};
 		try {
 			const response = await fetch(
-				"http://localhost:8000/completions",
+				"/.netlify/functions/completions",
 				options
 			);
 
