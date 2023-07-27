@@ -30,9 +30,6 @@ exports.handler = async function (event) {
 		};
 	} catch (error) {
 		console.error(error);
-        console.log(
-            "Sorry, Netlify limits timeout to 10 seconds. Please use a shorter prompt. Check my Github for a version with no timeout using CORS and Express!"
-        );
 		return {
 			statusCode: 500,
 			body: JSON.stringify({ error: "An error occurred" }),

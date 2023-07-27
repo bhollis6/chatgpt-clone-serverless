@@ -6,6 +6,10 @@ import ChatMainSection from "./ChatMainSection";
 import { Helmet } from "react-helmet";
 
 export default function App() {
+	console.log(
+		"Sorry, Netlify limits timeout to 10 seconds. Use short prompts to avoid an error. Check my Github for a version with no timeout using CORS and Express!"
+	);
+
 	const [value, setValue] = useState(null);
 	const [message, setMessage] = useState(null);
 	const [previousChats, setPreviousChats] = useState([]);
