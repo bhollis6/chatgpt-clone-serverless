@@ -26,7 +26,7 @@ exports.handler = async function (event) {
 
 		if (!response.ok) {
 			console.log(
-				"Limits with server hosting limit timeout to 10 seconds. Please use a shorter prompt. Check my Github for a version with no timeout using CORS and Express!"
+				"Sorry, Netlify limits timeout to 10 seconds. Please use a shorter prompt. Check my Github for a version with no timeout using CORS and Express!"
 			);
 		}
 
